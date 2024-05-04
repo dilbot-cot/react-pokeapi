@@ -1,6 +1,6 @@
 // Function to fetch a single random Pokemon
 export const fetchRandomPokemon = async () => {
-    const randomId = Math.floor(Math.random() * 898) + 1;  // There are 898 Pokemon in the API
+    const randomId = Math.floor(Math.random() * 1025) + 1; 
     const url = `https://pokeapi.co/api/v2/pokemon/${randomId}`;
     try {
         const response = await fetch(url);

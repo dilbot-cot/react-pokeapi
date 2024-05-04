@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PokeCard from './PokeCard';
-import { fetchRandomPokemon } from './PokeApi';  // Make sure this path is correct
+import { fetchRandomPokemon } from './PokeApi'; 
 
 function PokemonList() {
     const [pokemons, setPokemons] = useState([]);
@@ -8,7 +8,7 @@ function PokemonList() {
     useEffect(() => {
         const fetchPokemons = async () => {
             const newPokemons = await Promise.all(
-                Array.from({ length: 6 }, fetchRandomPokemon)  // Fetch 6 random Pokemon
+                Array.from({ length: 6 }, fetchRandomPokemon) 
             );
             setPokemons(newPokemons);
         };
